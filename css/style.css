@@ -1,0 +1,306 @@
+/* reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* Main styling  */
+html,body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.8em;
+}
+
+a{
+    color: #333;
+    text-decoration: none;
+}
+
+h1, h2, h3{
+    padding-bottom: 20px;
+    
+
+}
+
+p{
+    margin: 10px 0 ;
+}
+
+/* utility container */
+.container{
+    margin: auto;
+    padding: 0 20px;
+    max-width: 1100px;
+    overflow: auto;
+    
+}
+
+.text-primary{
+    color: #f7c08a;
+
+}
+
+.text-secondary{
+    color: #f7c08a;
+
+}
+
+.lead{
+    font-size: 24px;
+}
+
+.btn{
+    display: inline-block;
+    background: #333;
+    font-size: 18px;
+    color: #fff;
+    padding: 15px 20px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn:hover{
+    background: #f7c08a;
+    color:#333;
+}
+
+.btn-light{
+    background: #f4f4f4;
+    color: #333;
+
+}
+
+.bg-dark{
+    background:#333;
+    color: #fff;
+}
+
+.bg-light{
+    background:#f4f4f4;
+    color:#333;
+}
+
+.bg-primary{
+    background: #f7c08a;
+    color: #333;
+}
+
+.clr{
+    clear: both;
+}
+
+/*padding  */
+.py-1{padding:10px 0;}
+
+.py-2{padding:20px 0;}
+
+.py-3{padding-top:30px 0;
+}
+
+.l-heading{
+    font-size: 40px;
+}
+
+#navbar{
+    background: #333;
+    color:white;
+    overflow: auto;
+
+}
+
+#navbar a{
+    color: white;
+}
+
+/* now to set logo to left and ul to right use float */
+
+#navbar h1{
+    float: left;
+    padding: 20px 10px;
+}
+
+#navbar ul{
+    list-style: none;
+    float: right;
+    
+}
+
+#navbar ul li{
+    float: left;
+}
+
+#navbar ul li a{
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+
+#navbar ul li a:hover,#navbar ul li a.current /* if you are on home page home page color becomes permanent (current)*/
+ {
+    background: #444;
+    color: #f7c08a;
+}
+
+/* showcase */
+#showcase{
+    /* .. not . because we have to come outside the current file i.e, css */
+    background: url('../img/showcase.jpg') no-repeat center center/cover;
+    height: auto;
+    overflow: hidden;
+}
+
+#showcase .content{
+    color: #fff;
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 40px;
+
+}
+
+#showcase .content h1{
+    font-size: 70px;
+    line-height: 1.6em;
+}
+
+/* now text primary we can use anywhere so it is more of the utility class so... */
+
+#showcase .content p{
+    padding-bottom: 20px;
+    line-height: 1.7em;
+}
+
+/* home-info */
+#home-info{
+    height: 450px;
+}
+
+#home-info .info-img{
+    float: left;
+    width: 50%;
+    background: url('/img/photo-1631049307264-da0ec9d70304.jpg') no-repeat center center/cover;
+    height: 100%;
+   
+}
+
+#home-info .info-content{
+    float: right ;
+    width: 50%;
+    height:100%;
+    text-align: center;
+    padding: 50px 30px;
+    overflow:hidden;
+}
+
+#home-info .info-content p{
+    padding-bottom: 30px;
+}
+
+/* features */
+.box{
+    float: left;
+    width: 33.3%;
+    padding: 50px;
+    text-align: center;
+}
+
+.box i{
+    margin-bottom: 10px;
+}
+
+/* about info */
+#about-info .info-right{
+    float: right;
+    width: 50%;
+    min-height: 100%;
+
+}
+
+#about-info .info-right img{
+    display: block;
+    margin: auto;
+    width:50%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 50%;
+    
+}
+
+#about-info .info-left{
+    float: left;
+    width: 50%;
+    padding-left: 30px;
+    padding-top: 30px;
+    min-height:100%;
+}
+
+/* testimonials */
+#testimonials{
+    height: 100%;
+    background: url('../img/test-bg.jpg') no-repeat center center/cover;
+    padding-top: 100px;
+}
+
+#testimonials  h2{
+    color: #fff;
+    text-align: center;
+    padding: 40px;
+}
+
+#testimonials .testimonials{
+    padding: 40px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    opacity: 0.9;
+}
+
+#testimonials .testimonials img{
+    float: left;
+    margin-right: 20px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+/* contact form */
+#contact-form .container h1{
+    padding-top: 40px;
+}
+
+#contact-form .container .btn{
+    margin-bottom: 40px;
+}
+
+#contact-form .form-group{
+    margin-bottom: 20px;
+
+}
+
+#contact-form label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact-form input,textarea{
+    width:100%;
+    padding: 10px;
+    border: 1px #ddd solid;
+}
+
+#contact-form textarea{
+    height: 200px;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus{
+    outline: none;
+    border-color: #f7c08a;
+}
+
+/* footer */
+#footer{
+    text-align: center;
+    background:#444  ;
+    color: #fff;
+    padding: 15px;
+}
+
+ 
